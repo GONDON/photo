@@ -1,6 +1,7 @@
 import React from "react";
+import { debugHOC } from "./debug.js";
 
-
+@debugHOC
 class SetState2 extends React.Component{
     constructor(props) {
         super(props);
