@@ -1,4 +1,5 @@
 import React from "react";
+import { debugHOC , hijackHOC } from "./debug.js";
 
 function proxyHoc(WrappedComponent) {
   return class extends React.Component {
@@ -28,6 +29,7 @@ function proxyHoc(WrappedComponent) {
   }
 }
 
+@hijackHOC
 class HOC extends React.Component {
   render() {
     return <input {...this.props} ></input>

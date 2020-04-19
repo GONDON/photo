@@ -1,5 +1,5 @@
 import React from "react";
-import { debugHOC } from "./debug.js";
+import { debugHOC , hijackHOC } from "./debug.js";
 
 @debugHOC
 class SetState2 extends React.Component{
